@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hausaufgabe 12: Ratespiel</title>
+    <link rel="stylesheet" href="ratespiel.css">
+</head>
+<body>
+
+	<h2><strong>Ratespiel!</strong></h2>
+	<h3>Errate eine zufällige Nummer zwischen 1 und 100.</h3>
+ <!-- TODO: Implementieren Sie nach dieser Zeile den Start-Button -->
+<button id="btn_start">Start!</button>
+
+<!-- Spieler-Input-Feld -->
+<input type="text" id="user-input">
+
+<!-- TODO: Implementieren Sie nach dieser Zeile den Check-Button -->
+<button id="btn_check">Check!</button>
+
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Verzuchsanzahl -->
+<br>
+<br>
+<div id="txt_tries"></div>
+<br>
+<div id="txt_guessed"></div>
+<br>
+<br>
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Resultatsnachricht -->
+<div id="txt_result"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>Wieso genügen 7 Versuche, um das Ratespiel zu lösen?</h4>
+<p>Bei jedem Versuch wird der Intervall halbiert.</p>
+<p>Somit kann innerhalb von n Versuchen ein Zahlenbereich bis zu 2ⁿ abgedeckt werden.</p>
+<p>Nach höchstens 7 Versuchen hat man also eine Zahl zwischen 1 und 128 (das entspricht 2 hoch 7) mit Sicherheit erraten.</p>
+
+<!-- Einbindung von jQuery -->
+<script src="jquery-2.2.4.min.js"></script>
+
+<!-- Einbindung des eigenen JavaScript-Codes -->
+<script src="ratespiel.js"></script>
+</body>
+</html>
