@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\node.exe',
+1 verbose cli   'C:\\Program Files\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.6
+4 verbose stack Error: EEXIST: file already exists, mkdir 'C:\Users\Luise\AppData\Roaming\npm'
+4 verbose stack     at Error (native)
+5 verbose cwd C:\Users\Luise\EWP-Ratespiel
+6 error Windows_NT 6.1.7601
+7 error argv "C:\\Program Files\\node.exe" "C:\\Program Files\\node_modules\\npm\\bin\\npm-cli.js" "install" "bootstrap"
+8 error node v4.4.6
+9 error npm  v2.15.5
+10 error path C:\Users\Luise\AppData\Roaming\npm
+11 error code EEXIST
+12 error errno -4075
+13 error syscall mkdir
+14 error EEXIST: file already exists, mkdir 'C:\Users\Luise\AppData\Roaming\npm'
+File exists: C:\Users\Luise\AppData\Roaming\npm
+Move it away, and try again.
+15 verbose exit [ -4075, true ]
