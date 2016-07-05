@@ -1,0 +1,44 @@
+
+ h2 {
+	font-family: Georgia, serif;
+	color: #ffffff;
+ }
+ 
+ #txt_tries {
+	 color:#ffffff;
+ }
+ 
+ #txt_guessed {
+	 color:#ffffff;
+ }
+ #txt_result {
+	 color:#ffffff;
+ }
+ 
+ #btn_start {
+	font-family: Cambria, serif;
+	font-weight: bold;
+	border-color: #1b284d;
+    background-color: #d7dceb;
+    border-width: 2px;
+    border-style: solid;
+	border-radius: 3px;
+ }
+ 
+ #btn_check {
+	font-family: Cambria, serif;
+	font-weight: bold;
+	border-color: #1b284d;
+    background-color: #d7dceb;
+    border-width: 2px;
+    border-style: solid;
+	border-radius: 3px;
+ }
+ 
+ h4 {
+	 font-weight: bold;
+	 font-style:italic;
+ }
+ p{
+	 font-style: italic;
+ }

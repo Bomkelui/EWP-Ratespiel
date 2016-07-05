@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hausaufgabe 12: Ratespiel</title>
+    
+	<!-- Das neueste kompilierte und minimierte CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optionales Theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h2><strong>Ratespiel!</strong></h2>
+		<p>Errate eine zufällige Nummer zwischen 1 und 100.</p>
+</div>
+ 
+<div class="container">
+		<p><em>Klicke auf "Start" und der Spaß kann beginnen!</em></p><br>	
+		
+			<button type="button" class="btn btn-success btn-sm active" id="btn_start">
+			<span class="glyphicon glyphicon-star-empty"></span><strong>Start!</strong></button>
+		
+		
+			<input type="text" id="user-input">
+		
+			<button type="button" class="btn btn-warning btn-sm active" id="btn_check">
+			<span class="glyphicon glyphicon-ok"></span><strong>Check!</strong></button>
+		
+
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Verzuchsanzahl -->
+<br><br><br>
+<div class="row">
+<div class="col-md-6">
+	<ul class="list-group">
+		<li class="list-group-item active">
+			<h4 class="list-group-item-heading"><div id="txt_tries"></div></h4>
+			<span class="badge" id="txt_guessed"></span>
+			<div id="txt_result"></div>
+		</li>
+	</ul>
+</div><!-- /class="col-md-4" -->
+</div><!-- /class="row" -->
+
+
+<br>
+<!-- TODO: Implementieren Sie nach dieser Zeile ein Textfeld für die Resultatsnachricht -->
+<div id="txt_result"></div>
+
+</div><!-- /container -->
+
+
+<br>
+<div class="container">
+<h5><strong>Wieso genügen 7 Versuche, um das Ratespiel zu lösen?</strong></h5>
+<p>Bei jedem Versuch wird der Intervall halbiert.</p>
+<p>Somit kann innerhalb von n Versuchen ein Zahlenbereich bis zu 2ⁿ abgedeckt werden.</p>
+<p>Nach höchstens 7 Versuchen hat man also eine Zahl zwischen 1 und 128 (das entspricht 2 hoch 7) mit Sicherheit erraten.</p>
+
+<br><br>
+
+	<footer>
+        <p>&copy; Luise Bomke 2016</p>
+     </footer>
+	 
+</div><!-- /container -->
+ 
+<!-- Einbindung von jQuery -->
+<script src="jquery-2.2.4.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+<!-- Einbindung des eigenen JavaScript-Codes -->
+<script src="ratespiel.js"></script>
+</body>
+</html>
